@@ -15,7 +15,7 @@ namespace PathPilot
     {
         public static string cellValue;
         public static string newcellValue;
-        private Size previousSize;
+
         public PathManager()
         {
             InitializeComponent();
