@@ -29,13 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            Bunifu.UI.WinForms.BunifuFormCaptionButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuFormCaptionButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuFormCaptionButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuFormCaptionButton.BorderEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PathManager));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuFormDrag1 = new Bunifu.UI.WinForms.BunifuFormDrag();
-            this.bunifuFormControlBox1 = new Bunifu.UI.WinForms.BunifuFormControlBox();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.pathGrid = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.Path = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,6 +47,9 @@
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             this.btnDeletePathx = new Bunifu.UI.WinForms.BunifuImageButton();
             this.bunifuShapes1 = new Bunifu.UI.WinForms.BunifuShapes();
+            this.bunifuFormCaptionButton1 = new Bunifu.UI.WinForms.BunifuFormCaptionButton();
+            this.bunifuFormCaptionButton2 = new Bunifu.UI.WinForms.BunifuFormCaptionButton();
+            this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pathGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,68 +83,6 @@
             this.bunifuFormDrag1.TitleBarOptions.TitleBarControl = null;
             this.bunifuFormDrag1.TitleBarOptions.UseBackColorOnDockingIndicators = false;
             // 
-            // bunifuFormControlBox1
-            // 
-            this.bunifuFormControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuFormControlBox1.BunifuFormDrag = null;
-            this.bunifuFormControlBox1.CloseBoxOptions.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuFormControlBox1.CloseBoxOptions.BorderRadius = 0;
-            this.bunifuFormControlBox1.CloseBoxOptions.Enabled = true;
-            this.bunifuFormControlBox1.CloseBoxOptions.EnableDefaultAction = true;
-            this.bunifuFormControlBox1.CloseBoxOptions.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
-            this.bunifuFormControlBox1.CloseBoxOptions.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuFormControlBox1.CloseBoxOptions.Icon")));
-            this.bunifuFormControlBox1.CloseBoxOptions.IconAlt = null;
-            this.bunifuFormControlBox1.CloseBoxOptions.IconColor = System.Drawing.Color.Black;
-            this.bunifuFormControlBox1.CloseBoxOptions.IconHoverColor = System.Drawing.Color.White;
-            this.bunifuFormControlBox1.CloseBoxOptions.IconPressedColor = System.Drawing.Color.White;
-            this.bunifuFormControlBox1.CloseBoxOptions.IconSize = new System.Drawing.Size(18, 18);
-            this.bunifuFormControlBox1.CloseBoxOptions.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
-            this.bunifuFormControlBox1.HelpBox = false;
-            this.bunifuFormControlBox1.HelpBoxOptions.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuFormControlBox1.HelpBoxOptions.BorderRadius = 0;
-            this.bunifuFormControlBox1.HelpBoxOptions.Enabled = true;
-            this.bunifuFormControlBox1.HelpBoxOptions.EnableDefaultAction = true;
-            this.bunifuFormControlBox1.HelpBoxOptions.HoverColor = System.Drawing.Color.LightGray;
-            this.bunifuFormControlBox1.HelpBoxOptions.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuFormControlBox1.HelpBoxOptions.Icon")));
-            this.bunifuFormControlBox1.HelpBoxOptions.IconAlt = null;
-            this.bunifuFormControlBox1.HelpBoxOptions.IconColor = System.Drawing.Color.Black;
-            this.bunifuFormControlBox1.HelpBoxOptions.IconHoverColor = System.Drawing.Color.Black;
-            this.bunifuFormControlBox1.HelpBoxOptions.IconPressedColor = System.Drawing.Color.Black;
-            this.bunifuFormControlBox1.HelpBoxOptions.IconSize = new System.Drawing.Size(22, 22);
-            this.bunifuFormControlBox1.HelpBoxOptions.PressedColor = System.Drawing.Color.Silver;
-            this.bunifuFormControlBox1.Location = new System.Drawing.Point(274, 1);
-            this.bunifuFormControlBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.bunifuFormControlBox1.MaximizeBox = false;
-            this.bunifuFormControlBox1.MaximizeBoxOptions.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuFormControlBox1.MaximizeBoxOptions.BorderRadius = 0;
-            this.bunifuFormControlBox1.MaximizeBoxOptions.Enabled = true;
-            this.bunifuFormControlBox1.MaximizeBoxOptions.EnableDefaultAction = true;
-            this.bunifuFormControlBox1.MaximizeBoxOptions.HoverColor = System.Drawing.Color.LightGray;
-            this.bunifuFormControlBox1.MaximizeBoxOptions.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuFormControlBox1.MaximizeBoxOptions.Icon")));
-            this.bunifuFormControlBox1.MaximizeBoxOptions.IconAlt = ((System.Drawing.Image)(resources.GetObject("bunifuFormControlBox1.MaximizeBoxOptions.IconAlt")));
-            this.bunifuFormControlBox1.MaximizeBoxOptions.IconColor = System.Drawing.Color.Black;
-            this.bunifuFormControlBox1.MaximizeBoxOptions.IconHoverColor = System.Drawing.Color.Black;
-            this.bunifuFormControlBox1.MaximizeBoxOptions.IconPressedColor = System.Drawing.Color.Black;
-            this.bunifuFormControlBox1.MaximizeBoxOptions.IconSize = new System.Drawing.Size(16, 16);
-            this.bunifuFormControlBox1.MaximizeBoxOptions.PressedColor = System.Drawing.Color.Silver;
-            this.bunifuFormControlBox1.MinimizeBox = true;
-            this.bunifuFormControlBox1.MinimizeBoxOptions.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuFormControlBox1.MinimizeBoxOptions.BorderRadius = 0;
-            this.bunifuFormControlBox1.MinimizeBoxOptions.Enabled = true;
-            this.bunifuFormControlBox1.MinimizeBoxOptions.EnableDefaultAction = true;
-            this.bunifuFormControlBox1.MinimizeBoxOptions.HoverColor = System.Drawing.Color.LightGray;
-            this.bunifuFormControlBox1.MinimizeBoxOptions.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuFormControlBox1.MinimizeBoxOptions.Icon")));
-            this.bunifuFormControlBox1.MinimizeBoxOptions.IconAlt = null;
-            this.bunifuFormControlBox1.MinimizeBoxOptions.IconColor = System.Drawing.Color.Black;
-            this.bunifuFormControlBox1.MinimizeBoxOptions.IconHoverColor = System.Drawing.Color.Black;
-            this.bunifuFormControlBox1.MinimizeBoxOptions.IconPressedColor = System.Drawing.Color.Black;
-            this.bunifuFormControlBox1.MinimizeBoxOptions.IconSize = new System.Drawing.Size(14, 14);
-            this.bunifuFormControlBox1.MinimizeBoxOptions.PressedColor = System.Drawing.Color.Silver;
-            this.bunifuFormControlBox1.Name = "bunifuFormControlBox1";
-            this.bunifuFormControlBox1.ShowDesignBorders = false;
-            this.bunifuFormControlBox1.Size = new System.Drawing.Size(65, 29);
-            this.bunifuFormControlBox1.TabIndex = 3;
-            // 
             // bunifuLabel1
             // 
             this.bunifuLabel1.AllowParentOverrides = false;
@@ -160,22 +102,22 @@
             // pathGrid
             // 
             this.pathGrid.AllowCustomTheming = true;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            this.pathGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
+            this.pathGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
             this.pathGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.pathGrid.BackgroundColor = System.Drawing.SystemColors.Control;
             this.pathGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.pathGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.pathGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.pathGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.pathGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.pathGrid.ColumnHeadersHeight = 5;
             this.pathGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Path});
@@ -197,15 +139,15 @@
             this.pathGrid.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
             this.pathGrid.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.SystemColors.GrayText;
             this.pathGrid.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.pathGrid.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.pathGrid.DefaultCellStyle = dataGridViewCellStyle12;
             this.pathGrid.EnableHeadersVisualStyles = false;
             this.pathGrid.GridColor = System.Drawing.SystemColors.ControlDarkDark;
             this.pathGrid.HeaderBackColor = System.Drawing.Color.White;
@@ -397,12 +339,116 @@
             this.bunifuShapes1.TabIndex = 12;
             this.bunifuShapes1.Text = "bunifuShapes1";
             // 
+            // bunifuFormCaptionButton1
+            // 
+            this.bunifuFormCaptionButton1.AllowAnimations = true;
+            this.bunifuFormCaptionButton1.AllowBorderColorChanges = true;
+            this.bunifuFormCaptionButton1.AllowDefaults = true;
+            this.bunifuFormCaptionButton1.AllowMouseEffects = true;
+            this.bunifuFormCaptionButton1.AnimationSpeed = 200;
+            this.bunifuFormCaptionButton1.AutoSizeCaptions = true;
+            this.bunifuFormCaptionButton1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuFormCaptionButton1.BackgroundColor = System.Drawing.Color.White;
+            this.bunifuFormCaptionButton1.BackHoverColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuFormCaptionButton1.BackPressedColor = System.Drawing.Color.Silver;
+            this.bunifuFormCaptionButton1.BorderColor = System.Drawing.SystemColors.Control;
+            this.bunifuFormCaptionButton1.BorderHoverColor = System.Drawing.Color.DarkGray;
+            this.bunifuFormCaptionButton1.BorderPressedColor = System.Drawing.Color.DarkGray;
+            this.bunifuFormCaptionButton1.BorderRadius = 1;
+            this.bunifuFormCaptionButton1.BorderStyle = Bunifu.UI.WinForms.BunifuFormCaptionButton.BorderStyles.Solid;
+            this.bunifuFormCaptionButton1.BorderThickness = 1;
+            this.bunifuFormCaptionButton1.CaptionType = Bunifu.UI.WinForms.BunifuFormCaptionButton.CaptionTypes.Minimize;
+            this.bunifuFormCaptionButton1.ColorContrastOnClick = 30;
+            this.bunifuFormCaptionButton1.ColorContrastOnHover = 30;
+            this.bunifuFormCaptionButton1.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges8.BottomLeft = true;
+            borderEdges8.BottomRight = true;
+            borderEdges8.TopLeft = true;
+            borderEdges8.TopRight = true;
+            this.bunifuFormCaptionButton1.CustomizableEdges = borderEdges8;
+            this.bunifuFormCaptionButton1.DefaultBorderColor = System.Drawing.SystemColors.Control;
+            this.bunifuFormCaptionButton1.DefaultColor = System.Drawing.Color.White;
+            this.bunifuFormCaptionButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.bunifuFormCaptionButton1.IconColor = System.Drawing.Color.Black;
+            this.bunifuFormCaptionButton1.IconHoverColor = System.Drawing.Color.Black;
+            this.bunifuFormCaptionButton1.IconPressedColor = System.Drawing.Color.Black;
+            this.bunifuFormCaptionButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuFormCaptionButton1.Image")));
+            this.bunifuFormCaptionButton1.ImageMargin = new System.Windows.Forms.Padding(1, 1, 0, 0);
+            this.bunifuFormCaptionButton1.ImageSize = new System.Drawing.Size(20, 20);
+            this.bunifuFormCaptionButton1.Location = new System.Drawing.Point(269, 3);
+            this.bunifuFormCaptionButton1.Name = "bunifuFormCaptionButton1";
+            this.bunifuFormCaptionButton1.ShowBorders = false;
+            this.bunifuFormCaptionButton1.Size = new System.Drawing.Size(30, 30);
+            this.bunifuFormCaptionButton1.TabIndex = 13;
+            this.bunifuFormCaptionButton1.Click += new System.EventHandler(this.bunifuFormCaptionButton1_Click);
+            // 
+            // bunifuFormCaptionButton2
+            // 
+            this.bunifuFormCaptionButton2.AllowAnimations = true;
+            this.bunifuFormCaptionButton2.AllowBorderColorChanges = true;
+            this.bunifuFormCaptionButton2.AllowDefaults = true;
+            this.bunifuFormCaptionButton2.AllowMouseEffects = true;
+            this.bunifuFormCaptionButton2.AnimationSpeed = 200;
+            this.bunifuFormCaptionButton2.AutoSizeCaptions = true;
+            this.bunifuFormCaptionButton2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuFormCaptionButton2.BackgroundColor = System.Drawing.Color.White;
+            this.bunifuFormCaptionButton2.BackHoverColor = System.Drawing.Color.Firebrick;
+            this.bunifuFormCaptionButton2.BackPressedColor = System.Drawing.Color.Silver;
+            this.bunifuFormCaptionButton2.BorderColor = System.Drawing.Color.LightGray;
+            this.bunifuFormCaptionButton2.BorderHoverColor = System.Drawing.Color.DarkGray;
+            this.bunifuFormCaptionButton2.BorderPressedColor = System.Drawing.Color.DarkGray;
+            this.bunifuFormCaptionButton2.BorderRadius = 1;
+            this.bunifuFormCaptionButton2.BorderStyle = Bunifu.UI.WinForms.BunifuFormCaptionButton.BorderStyles.Solid;
+            this.bunifuFormCaptionButton2.BorderThickness = 1;
+            this.bunifuFormCaptionButton2.CaptionType = Bunifu.UI.WinForms.BunifuFormCaptionButton.CaptionTypes.Minimize;
+            this.bunifuFormCaptionButton2.ColorContrastOnClick = 30;
+            this.bunifuFormCaptionButton2.ColorContrastOnHover = 30;
+            this.bunifuFormCaptionButton2.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges7.BottomLeft = true;
+            borderEdges7.BottomRight = true;
+            borderEdges7.TopLeft = true;
+            borderEdges7.TopRight = true;
+            this.bunifuFormCaptionButton2.CustomizableEdges = borderEdges7;
+            this.bunifuFormCaptionButton2.DefaultBorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormCaptionButton2.DefaultColor = System.Drawing.Color.White;
+            this.bunifuFormCaptionButton2.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.bunifuFormCaptionButton2.IconColor = System.Drawing.Color.Black;
+            this.bunifuFormCaptionButton2.IconHoverColor = System.Drawing.Color.Black;
+            this.bunifuFormCaptionButton2.IconPressedColor = System.Drawing.Color.Black;
+            this.bunifuFormCaptionButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuFormCaptionButton2.Image")));
+            this.bunifuFormCaptionButton2.ImageMargin = new System.Windows.Forms.Padding(2, 2, 0, 0);
+            this.bunifuFormCaptionButton2.ImageSize = new System.Drawing.Size(20, 20);
+            this.bunifuFormCaptionButton2.Location = new System.Drawing.Point(305, 3);
+            this.bunifuFormCaptionButton2.Name = "bunifuFormCaptionButton2";
+            this.bunifuFormCaptionButton2.ShowBorders = false;
+            this.bunifuFormCaptionButton2.Size = new System.Drawing.Size(30, 30);
+            this.bunifuFormCaptionButton2.TabIndex = 14;
+            this.bunifuFormCaptionButton2.Click += new System.EventHandler(this.bunifuFormCaptionButton2_Click);
+            // 
+            // bunifuLabel5
+            // 
+            this.bunifuLabel5.AllowParentOverrides = false;
+            this.bunifuLabel5.AutoEllipsis = false;
+            this.bunifuLabel5.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel5.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel5.Location = new System.Drawing.Point(229, 442);
+            this.bunifuLabel5.Name = "bunifuLabel5";
+            this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel5.Size = new System.Drawing.Size(104, 14);
+            this.bunifuLabel5.TabIndex = 15;
+            this.bunifuLabel5.Text = "Owned by DiyRex :)";
+            this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel5.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
             // PathManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(341, 450);
+            this.ClientSize = new System.Drawing.Size(341, 459);
+            this.Controls.Add(this.bunifuLabel5);
+            this.Controls.Add(this.bunifuFormCaptionButton2);
+            this.Controls.Add(this.bunifuFormCaptionButton1);
             this.Controls.Add(this.bunifuLabel4);
             this.Controls.Add(this.btnDeletePathx);
             this.Controls.Add(this.bunifuLabel3);
@@ -411,13 +457,14 @@
             this.Controls.Add(this.btnAddPathx);
             this.Controls.Add(this.bunifuLabel1);
             this.Controls.Add(this.pathGrid);
-            this.Controls.Add(this.bunifuFormControlBox1);
             this.Controls.Add(this.bunifuShapes1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PathManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Activated += new System.EventHandler(this.PathManager_Activated);
             this.Load += new System.EventHandler(this.PathManager_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pathGrid)).EndInit();
             this.ResumeLayout(false);
@@ -431,7 +478,6 @@
         private Bunifu.UI.WinForms.BunifuFormDrag bunifuFormDrag1;
         private Bunifu.UI.WinForms.BunifuDataGridView pathGrid;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
-        private Bunifu.UI.WinForms.BunifuFormControlBox bunifuFormControlBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Path;
         private Bunifu.UI.WinForms.BunifuImageButton btnAddPathx;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
@@ -440,5 +486,8 @@
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
         private Bunifu.UI.WinForms.BunifuImageButton btnUpdatePathx;
         private Bunifu.UI.WinForms.BunifuShapes bunifuShapes1;
+        private Bunifu.UI.WinForms.BunifuFormCaptionButton bunifuFormCaptionButton1;
+        private Bunifu.UI.WinForms.BunifuFormCaptionButton bunifuFormCaptionButton2;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel5;
     }
 }

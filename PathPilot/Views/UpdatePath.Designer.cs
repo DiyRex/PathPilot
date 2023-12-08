@@ -368,6 +368,7 @@
             this.Name = "UpdatePath";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UpdatePath";
+            this.Load += new System.EventHandler(this.UpdatePath_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

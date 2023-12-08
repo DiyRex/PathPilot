@@ -9,29 +9,28 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using PathPilot.Controllers;
 
-namespace PathPilot
+namespace PathPilot.Views
 {
-    public partial class UpdatePath : Form
+    public partial class DeletePath : Form
     {
         private string onLoadValue;
         private string allPath;
-        public UpdatePath(String path)
+        public DeletePath(string path)
         {
             InitializeComponent();
-            this.txtAddPathU.Text = path;
             onLoadValue = path;
         }
 
-        private void btnUpdate_Click(object sender, EventArgs e)
+        private void btnDeleteY_Click(object sender, EventArgs e)
         {
-            if (txtAddPathU.Text != null)
+            if (onLoadValue != null)
             {
                 string[] path = ReadPath.ReadValue();
                 foreach (string pathItem in path)
                 {
                     if (pathItem.Length > 0 && pathItem == onLoadValue)
                     {
-                        allPath += txtAddPathU.Text + ";";
+                        
                     }
                     else
                     {
@@ -40,14 +39,12 @@ namespace PathPilot
                 }
                 WritePath.AddPath(allPath);
                 this.Close();
-                //PathManager.cellValue = txtAddPathU.Text;
-                //this.Close();
             }
         }
 
-        private void UpdatePath_Load(object sender, EventArgs e)
+        private void btnDeleteN_Click(object sender, EventArgs e)
         {
-            //onLoadValue = txtAddPathU.Text;
+            this.Close();
         }
     }
 }

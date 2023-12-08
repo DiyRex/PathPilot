@@ -35,6 +35,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icons8-gear-96 %281%29.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu.Licensing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b, processorArchitecture=MSIL">
       <HintPath>..\packages\Bunifu.Licensing.5.0.0\lib\net40\Bunifu.Licensing.dll</HintPath>
@@ -42,7 +45,7 @@
     <Reference Include="Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
       <HintPath>..\packages\Bunifu.UI.WinForms.6.1.0\lib\net40\Bunifu.UI.WinForms.dll</HintPath>
     </Reference>
-    <Reference Include="Bunifu.UI.WinForms.1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+    <Reference Include="Bunifu.UI.WinForms.1.5.3">
       <HintPath>..\packages\Bunifu.UI.WinForms.1.5.3.1.0.0\lib\net40\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="Costura, Version=3.3.3.0, Culture=neutral, PublicKeyToken=9919ef960d84173d, processorArchitecture=MSIL">
@@ -220,6 +223,8 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\ReadPath.cs" />
+    <Compile Include="Controllers\WritePath.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\AddPath.cs">
@@ -227,6 +232,12 @@
     </Compile>
     <Compile Include="Views\AddPath.Designer.cs">
       <DependentUpon>AddPath.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeletePath.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DeletePath.Designer.cs">
+      <DependentUpon>DeletePath.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\PathManager.cs">
       <SubType>Form</SubType>
@@ -253,6 +264,9 @@
     <EmbeddedResource Include="Views\AddPath.resx">
       <DependentUpon>AddPath.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\DeletePath.resx">
+      <DependentUpon>DeletePath.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\PathManager.resx">
       <DependentUpon>PathManager.cs</DependentUpon>
     </EmbeddedResource>
@@ -274,7 +288,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <Content Include="icons8-gear-96 %281%29.ico" />
+    <Content Include="Images\icons8-gear-96 %281%29.ico" />
+    <Content Include="Images\icons8-gear-96 %281%29.png" />
+    <Content Include="Images\icons8-gear-96.ico" />
+    <Content Include="Images\icons8-gear-96.png" />
+    <Content Include="Images\Spinner-1.1s-31px.gif" />
+    <Content Include="Images\Spinner-1.1s-98px.gif" />
+    <Content Include="Images\spnr.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.4.0.2\build\Fody.targets" Condition="Exists('..\packages\Fody.4.0.2\build\Fody.targets')" />

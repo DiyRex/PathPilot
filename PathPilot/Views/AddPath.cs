@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PathPilot.Controllers;
 
 namespace PathPilot
 {
@@ -21,7 +22,7 @@ namespace PathPilot
         {
             if (txtAddPath.Text != null)
             {
-                PathManager.newcellValue = txtAddPath.Text;
+                WritePath.AddPath(PathManager.allpath + ";" + txtAddPath.Text);
                 this.Close();
             }
         }
@@ -34,6 +35,10 @@ namespace PathPilot
             {
                 txtAddPath.Text = dialog.SelectedPath;
             }
+        }
+
+        private void AddPath_Load(object sender, EventArgs e)
+        {
         }
     }
 }
