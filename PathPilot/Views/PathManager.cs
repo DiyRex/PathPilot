@@ -28,7 +28,6 @@ namespace PathPilot
 
         private void AddDataToGrid()
         {
-            // Get the current value of the PATH variable
             string[] path = ReadPath.ReadValue();
             pathGrid.Rows.Clear();
             pathGrid.AllowUserToAddRows = false;
@@ -49,44 +48,22 @@ namespace PathPilot
 
         private void btnAddPathx_Click(object sender, EventArgs e)
         {
-            
-            foreach (DataGridViewRow row in pathGrid.Rows)
-            {
-                // Skip the last row if it is the new row for data entry
-                if (!row.IsNewRow)
-                {
-                    // Assuming you have only one column, change the index accordingly
-                    string line = row.Cells[0].Value.ToString();
-                    //allpath += line + ";";
-                }
-            }
             AddPath ap = new AddPath();
             ap.ShowDialog();
             AddDataToGrid();
-            //pathGrid.Rows.Add(newcellValue);
-            //WritePath.AddPath(allpath);
-
         }
 
         private void btnUpdatePathx_Click(object sender, EventArgs e)
         {
             if (pathGrid.SelectedCells.Count > 0)
             {
-                // Assuming the column index is 0 (Column1 in this example)
                 int selectedRowIndex = pathGrid.SelectedCells[0].RowIndex;
-
-                // Assuming the column index is 0 (Column1 in this example)
                 string selectedValue = pathGrid.Rows[selectedRowIndex].Cells[0].Value.ToString();
                 UpdatePath up = new UpdatePath(selectedValue);
                 up.ShowDialog();
-                //pathGrid.Rows[selectedRowIndex].Cells[0].Value = cellValue;
                 AddDataToGrid();
                 pathGrid.FirstDisplayedScrollingRowIndex = selectedRowIndex;
                 pathGrid.Rows[selectedRowIndex].Selected = true;
-
-
-
-
             }
             else
             {
@@ -96,44 +73,8 @@ namespace PathPilot
 
         private void btnDeletePathx_Click(object sender, EventArgs e)
         {
-            // Check if any row is selected
-            //if (pathGrid.SelectedRows.Count > 0)
-            //{
 
-            //     Assuming the column index is 0 (Column1 in this example)
-            //    int selectedRowIndex = pathGrid.SelectedCells[0].RowIndex;
-
-            //     Assuming the column index is 0 (Column1 in this example)
-            //    string selectedValue = pathGrid.Rows[selectedRowIndex].Cells[0].Value.ToString();
-            //    allpath_ad = "";
-            //    string[] path = ReadPath.ReadValue();
-            //    foreach (string pathItem in path)
-            //    {
-            //        if (pathItem.Length > 0 && pathItem == pathGrid.Rows[selectedRowIndex].Cells[0].Value.ToString())
-            //        {
-
-            //        }
-            //        else
-            //        {
-            //            allpath_ad += pathItem + ";";
-            //        }
-            //    }
-            //    WritePath.AddPath(allpath_ad);
-            //     Remove the selected row from the DataGridView
-            //    pathGrid.Rows.RemoveAt(selectedRowIndex);
-                
-
-            //    pathGrid.Refresh();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("No row selected", "Information");
-            //}
-
-            // Assuming the column index is 0 (Column1 in this example)
             int selectedRowIndex = pathGrid.SelectedCells[0].RowIndex;
-
-            // Assuming the column index is 0 (Column1 in this example)
             string selectedValue = pathGrid.Rows[selectedRowIndex].Cells[0].Value.ToString();
             DeletePath dp = new DeletePath(selectedValue);
             dp.ShowDialog();

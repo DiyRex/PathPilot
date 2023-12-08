@@ -40,14 +40,22 @@ namespace PathPilot
                 }
                 WritePath.AddPath(allPath);
                 this.Close();
-                //PathManager.cellValue = txtAddPathU.Text;
-                //this.Close();
             }
         }
 
         private void UpdatePath_Load(object sender, EventArgs e)
         {
             //onLoadValue = txtAddPathU.Text;
+        }
+
+        private void btnAddFolderU_Click(object sender, EventArgs e)
+        {
+            var dialog = new FolderBrowserDialog();
+            var result = dialog.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                txtAddPathU.Text = dialog.SelectedPath;
+            }
         }
     }
 }
